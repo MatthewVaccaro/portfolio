@@ -1,0 +1,40 @@
+html {
+  font-family: Roboto;
+}
+
+.navContainer {
+  width: 90%;
+  max-width: 1024px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+a {
+  margin: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #999;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+button {
+  padding: 18px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  margin-left: 25px;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

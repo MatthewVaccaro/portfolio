@@ -1,0 +1,82 @@
+import React, { useEffect } from "react";
+import { data } from "../../data/projectData";
+import "./view.css";
+
+import Card from "../projectCard/projectCard";
+
+import Twitter from "../../assets/twitter.svg";
+import LinkedIn from "../../assets/linkedIn.svg";
+import blueRight from "../../assets/blueRight.svg";
+import greenLeft from "../../assets/greenLeft.svg";
+import bottomGraphic from "../../assets/bottomGraphic.svg";
+
+const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <div className="masterContainer">
+        <div className="header">
+          <h1>Hey, I'm Matt!</h1>
+          <h3>
+            I am a product designer, a curious thinker, and most of all, a
+            friend! I spend my time hanging with my wife, doggos, and trying to
+            be better than myself the day before
+          </h3>
+          <div className="socialButtons">
+            <a
+              className="iconLink"
+              target="_blank"
+              href="https://twitter.com/EarHolesMcgee"
+            >
+              <img className="icons" src={Twitter} />
+            </a>
+            <a
+              className="iconLink"
+              target="_blank"
+              href="https://www.linkedin.com/in/matthew-vaccaro-409158119/"
+            >
+              <img className="icons" src={LinkedIn} />
+            </a>
+          </div>
+        </div>
+        <img className="blueRight" src={blueRight} />
+        <img className="greenLeft" src={greenLeft} />
+      </div>
+      <h2>WORK</h2>
+      {data
+        ? data.map(cv => {
+            return <Card data={cv} />;
+          })
+        : "no data"}
+      <p className="note"> Additional work available upon request</p>
+      <img className="bottomGraphic" src={bottomGraphic} />
+      <div className="greetingCard">
+        <h2>Pleassure Meeting You!</h2>
+        <h3>
+          I love meeting new people, so don’t be a stranger and reach out on
+          Twitter or Linked In!
+        </h3>
+        <div className="socialButtons">
+          <a
+            className="iconLink"
+            target="_blank"
+            href="https://twitter.com/EarHolesMcgee"
+          >
+            <img className="icons" src={Twitter} />
+          </a>
+          <a
+            className="iconLink"
+            target="_blank"
+            href="https://www.linkedin.com/in/matthew-vaccaro-409158119/"
+          >
+            <img className="icons" src={LinkedIn} />
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;

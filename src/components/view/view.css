@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap");
+
+.masterContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  height: 61vh;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 700px;
+  margin: 120px auto 0px auto;
+}
+
+h1 {
+  font-size: 65px;
+  color: #222;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  line-height: 39px;
+  color: #222222c7;
+}
+
+.blueRight {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+
+.greenLeft {
+  position: absolute;
+  left: 0;
+  top: 600px;
+}
+
+.iconLink {
+  margin: 0;
+}
+
+.icons {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #222;
+  font-weight: bold;
+  margin: 50px 0px;
+  font-size: 35px;
+}
+
+.note {
+  color: #222222c7;
+  text-align: center;
+  margin: 0 auts;
+}
+.bottomGraphic {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: -3;
+}
+
+.greetingCard {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  border: solid 1px #eee;
+  padding: 35px;
+  margin: 320px auto 150px auto;
+  width: 800px;
+  box-shadow: 0px 10px 5px rgba(51, 51, 51, 0.15);
+}
+
+.socialButtons.greetingCard {
+  justify-items: center;
+}
+
+.greetingCard h3 {
+  width: 500px;
+}
+
+.greetingCard h2 {
+  margin: 0px;
+}

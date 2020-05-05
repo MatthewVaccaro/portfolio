@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1040px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+}
+
+.note {
+  height: auto;
+  width: unset;
+  margin: 0;
+  margin-right: 9px;
+  height: 32px;
+}
