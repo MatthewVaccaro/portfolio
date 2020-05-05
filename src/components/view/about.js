@@ -1,25 +1,54 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./about.css";
 import photo from "../../assets/photo.png";
+import { gsap } from "gsap";
 
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  let fadeIn = useRef(null);
+  let fadeIn2 = useRef(null);
+  let fadeIn3 = useRef(null);
+
+  useEffect(() => {
+    gsap.from([fadeIn], {
+      opacity: 0,
+      delay: 0.5,
+      ease: "power3.out",
+      y: 64,
+      stagger: {
+        amount: 0.3
+      }
+    });
+  }, [fadeIn]);
+
+  useEffect(() => {
+    gsap.from([fadeIn2, fadeIn3], {
+      opacity: 0,
+      delay: 1,
+      ease: "power3.out",
+      y: 0,
+      stagger: {
+        amount: 0
+      }
+    });
+  }, [fadeIn2, fadeIn3]);
   return (
     <div className="aboutContainer">
-      <div className="about">
+      <div ref={animation => (fadeIn = animation)} className="about">
         <h1>About Me</h1>
         <h3>
           I believe there are depths to every human. Goes as deep as you would
           like in meeting me.
         </h3>
       </div>
-      <div className="photo">
+      <div ref={animation => (fadeIn2 = animation)} className="photo">
         <img src={photo} />
       </div>
 
-      <div className="depth1">
+      <div ref={animation => (fadeIn3 = animation)} className="depth1">
         <div className="depthContainer">
           <h2>Professional</h2>
           <h3>

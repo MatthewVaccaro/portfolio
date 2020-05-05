@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { data } from "../../data/projectData";
+import { gsap } from "gsap";
 import "./view.css";
 
 import Card from "../projectCard/projectCard";
@@ -14,10 +15,39 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  let line = useRef(null);
+  let line2 = useRef(null);
+  let fadeIn = useRef(null);
+  let other = useRef(null);
+
+  useEffect(() => {
+    gsap.from([line, line2], {
+      opacity: 0,
+      delay: 1,
+      ease: "power3.out",
+      y: 64,
+      stagger: {
+        amount: 0.15
+      }
+    });
+  }, [line, line2]);
+
+  useEffect(() => {
+    gsap.from([fadeIn], {
+      opacity: 0,
+      delay: 0.5,
+      ease: "power3.out",
+      y: 0,
+      stagger: {
+        amount: 0.15
+      }
+    });
+  }, [fadeIn]);
   return (
     <>
-      <div className="masterContainer">
-        <div className="header">
+      <div ref={animation => (fadeIn = animation)} className="masterContainer">
+        <div ref={animation => (line = animation)} className="header">
           <h1>Hey, I'm Matt!</h1>
           <h3>
             I am a product designer, a curious thinker, and most of all, a
@@ -44,7 +74,7 @@ const Home = () => {
         <img className="blueRight" src={blueRight} />
         <img className="greenLeft" src={greenLeft} />
       </div>
-      <h2>WORK</h2>
+      <h2 ref={animation => (line2 = animation)}>WORK</h2>
       {data
         ? data.map(cv => {
             return <Card data={cv} />;
