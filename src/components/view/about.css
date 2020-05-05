@@ -35,7 +35,7 @@ h3 {
   flex-flow: column;
   width: 700px;
   margin: 0 auto;
-  padding: 150px;
+  padding: 150px 0px;
 }
 
 .depth1 h2,
@@ -72,7 +72,7 @@ h3 {
 
 .depth3 {
   background: #808080;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .depth4 h3,
@@ -87,4 +87,31 @@ h3 {
 .depth4 {
   background: #fff;
   padding: 200px 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .about {
+    width: 355px;
+    margin-top: 25px;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  .profile {
+    width: 60%;
+  }
+
+  .depthContainer {
+    width: 375px;
+    margin: 0 auto;
+
+    padding: 150px 10px;
+  }
+
+  .depth4 {
+    background: #fff;
+    padding: 0px 0 0px 0;
+  }
 }

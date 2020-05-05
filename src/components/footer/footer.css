@@ -19,3 +19,12 @@
   margin-right: 9px;
   height: 32px;
 }
+@media only screen and (max-width: 375px) {
+  .footer nav {
+    display: none;
+  }
+
+  .tag {
+    margin: 0 auto;
+  }
+}

@@ -46,13 +46,16 @@ const Home = () => {
   }, [fadeIn]);
   return (
     <>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <div ref={animation => (fadeIn = animation)} className="masterContainer">
         <div ref={animation => (line = animation)} className="header">
           <h1>Hey, I'm Matt!</h1>
           <h3>
             I am a product designer, a curious thinker, and most of all, a
             friend! I spend my time hanging with my wife, doggos, and trying to
-            be better than myself the day before
+            make myself better everyday!
           </h3>
           <div className="socialButtons">
             <a

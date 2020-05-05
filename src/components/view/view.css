@@ -92,3 +92,53 @@ h2 {
 .greetingCard h2 {
   margin: 0px;
 }
+
+@media only screen and (max-width: 375px) {
+  .header {
+    width: 375px;
+    margin: 120px auto 0px auto;
+    padding: 0px 10px;
+  }
+
+  .header h1 {
+    font-size: 65px;
+    color: #222;
+    margin: 10px;
+    width: 375px;
+  }
+
+  .header h3 {
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    line-height: 39px;
+    color: #222222c7;
+    width: 375px;
+  }
+  .blueRight {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -10;
+    width: 30%;
+    height: 70%;
+  }
+
+  .greenLeft {
+    display: none;
+  }
+
+  .bottomGraphic {
+    display: none;
+  }
+
+  .greetingCard {
+    width: 355px;
+    margin: 50px auto;
+  }
+
+  .greetingCard h3 {
+    width: 100%;
+    text-align: center;
+  }
+}

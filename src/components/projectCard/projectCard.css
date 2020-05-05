@@ -54,3 +54,27 @@ p {
 .buttonLink {
   margin: 0;
 }
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 355px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .projectBTN,
+  .caseStudyBTN {
+    width: 100%;
+    margin: 6px 0px;
+  }
+
+  .caseStudyBTN {
+    background: #222;
+    border: solid 1px white;
+    color: white;
+  }
+}

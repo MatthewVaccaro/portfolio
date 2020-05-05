@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { gsap } from "gsap";
 import "./nav.css";
 import logo from "../../assets/logo.svg";
+import menu from "../../assets/menu.svg";
 const Nav = () => {
   let fadeIn = useRef(null);
 
@@ -17,19 +18,50 @@ const Nav = () => {
       }
     });
   }, [fadeIn]);
+
+  const [toggle, setToggle] = useState(false);
+  const toggler = () => {
+    console.log(toggle);
+    setToggle(!toggle);
+  };
   return (
-    <div ref={animation => (fadeIn = animation)} className="navContainer">
-      <img src={logo}></img>
-      <nav>
-        <NavLink to="/" exact activeStyle={{ color: "#000" }}>
-          WORK
-        </NavLink>
-        <NavLink to="/about" exact activeStyle={{ color: "#000" }}>
-          ABOUT
-        </NavLink>
-        <button>RESUME</button>
-      </nav>
-    </div>
+    <>
+      <div ref={animation => (fadeIn = animation)} className="navContainer">
+        <img src={logo}></img>
+        <nav>
+          <NavLink to="/" exact activeStyle={{ color: "#000" }}>
+            WORK
+          </NavLink>
+          <NavLink to="/about" exact activeStyle={{ color: "#000" }}>
+            ABOUT
+          </NavLink>
+          <button>RESUME</button>
+        </nav>
+      </div>
+
+      {/* Mobile Nav */}
+
+      <div className="mobileNavContainer">
+        <div className="mobileNav">
+          <img className="mobileLogo" src={logo}></img>
+          <img onClick={toggler} src={menu} className="menu" />
+        </div>
+        <div
+          onClick={toggler}
+          className={toggle ? "menu_container" : "menu_container hidden_menu"}
+        >
+          <nav className={toggle ? "mobile" : "mobile_hidden"}>
+            <NavLink onClick={toggler} to="/">
+              HOME
+            </NavLink>
+            <NavLink onClick={toggler} to="/about">
+              ABOUT
+            </NavLink>
+            <button onClick={toggler}>RESUME</button>
+          </nav>
+        </div>
+      </div>
+    </>
   );
 };
 
