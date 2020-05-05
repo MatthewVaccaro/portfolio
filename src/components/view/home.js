@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { data } from "../../data/projectData";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 import "./view.css";
 
 import Card from "../projectCard/projectCard";
@@ -83,10 +84,11 @@ const Home = () => {
       <p className="note"> Additional work available upon request</p>
       <img className="bottomGraphic" src={bottomGraphic} />
       <div className="greetingCard">
-        <h2>Pleassure Meeting You!</h2>
+        <h2>Pleasure Meeting You!</h2>
         <h3>
           I love meeting new people, so don’t be a stranger and reach out on
-          Twitter or Linked In!
+          Twitter or Linked In! You can also{" "}
+          <Link to="/about"> learn more </Link> about me if you're curious.
         </h3>
         <div className="socialButtons">
           <a

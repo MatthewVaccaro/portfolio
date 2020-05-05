@@ -114,6 +114,10 @@ h3 {
     width: 60%;
   }
 
+  .profile img {
+    width: 100%;
+  }
+
   .depthContainer {
     width: 375px;
     margin: 0 auto;

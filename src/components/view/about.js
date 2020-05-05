@@ -45,7 +45,9 @@ const About = () => {
         </h3>
       </div>
       <div ref={animation => (fadeIn2 = animation)} className="photo">
-        <img className="profile" src={photo} />
+        <div className="profile">
+          <img src={photo} />
+        </div>
       </div>
 
       <div ref={animation => (fadeIn3 = animation)} className="depth1">
