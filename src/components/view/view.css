@@ -104,7 +104,7 @@ h2 {
     font-size: 65px;
     color: #222;
     margin: 10px;
-    width: 375px;
+    width: 100%;
   }
 
   .header h3 {
@@ -113,7 +113,7 @@ h2 {
     text-align: left;
     line-height: 39px;
     color: #222222c7;
-    width: 375px;
+    width: 100%;
   }
   .blueRight {
     position: absolute;
