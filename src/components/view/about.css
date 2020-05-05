@@ -95,6 +95,17 @@ h3 {
     margin-top: 25px;
   }
 
+  h1 {
+    width: 100%;
+  }
+
+  .depth1 h2,
+  .depth2 h2,
+  .depth3 h2,
+  .depth4 h2 {
+    width: 100%;
+  }
+
   h3 {
     width: 100%;
   }
