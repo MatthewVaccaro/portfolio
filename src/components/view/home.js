@@ -46,9 +46,6 @@ const Home = () => {
   }, [fadeIn]);
   return (
     <>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <div ref={animation => (fadeIn = animation)} className="masterContainer">
         <div ref={animation => (line = animation)} className="header">
           <h1>Hey, I'm Matt!</h1>

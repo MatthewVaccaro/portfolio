@@ -5,9 +5,6 @@ const Card = props => {
   const { logo, timeline, content, projectLink, caseStudy } = props.data;
   return (
     <>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <div className="cardContainer">
         <div className="card">
           <div>
