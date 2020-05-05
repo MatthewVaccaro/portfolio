@@ -89,7 +89,7 @@ h3 {
   padding: 200px 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .about {
     width: 355px;
     margin-top: 25px;

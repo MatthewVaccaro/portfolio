@@ -55,7 +55,7 @@ p {
   margin: 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   .card {
     width: 355px;
     padding: 20px;
