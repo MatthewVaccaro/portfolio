@@ -32,6 +32,10 @@ p {
   height: 40px;
 }
 
+button {
+  text-transform: uppercase;
+}
+
 .projectBTN {
   background: white;
   color: #222;

@@ -2,7 +2,7 @@ import React from "react";
 import "./projectCard.css";
 
 const Card = props => {
-  const { logo, timeline, content, projectLink, caseStudy } = props.data;
+  const { logo, timeline, content, projectLink, caseStudy, name } = props.data;
   return (
     <>
       <div className="cardContainer">
@@ -14,7 +14,7 @@ const Card = props => {
           <p>{content}</p>
           <div className="buttonContainer">
             <a target="_blank" className="buttonLink" href={projectLink}>
-              <button className="projectBTN">VIEW PROJECT →</button>
+              <button className="projectBTN">VIEW {name} →</button>
             </a>
             <a target="_blank" className="buttonLink" href={caseStudy}>
               <button className="caseStudyBTN">READ CASE STUDY →</button>

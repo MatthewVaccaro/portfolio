@@ -52,8 +52,8 @@ const Home = () => {
           <h1>Hey, I'm Matt!</h1>
           <h3>
             I am a product designer, a curious thinker, and most of all, a
-            friend! I spend my time hanging with my wife, doggos, and trying to
-            make myself better everyday!
+            friend! <br /> I spend my time hanging with my wife, doggos, and
+            trying to make myself better everyday!
           </h3>
           <div className="socialButtons">
             <a
@@ -86,8 +86,9 @@ const Home = () => {
       <div className="greetingCard">
         <h2>Pleasure Meeting You!</h2>
         <h3>
-          I love meeting new people, so don’t be a stranger and reach out on
-          Twitter or Linked In! You can also
+          I love meeting new people, so reach out on Twitter or Linked in. Don't
+          be a stranger! <br />
+          You can also
           <Link to="/about"> learn more </Link> about me if you're curious.
         </h3>
         <div className="socialButtons">
