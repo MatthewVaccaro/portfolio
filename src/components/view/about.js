@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </div>
       <div className="warning">
-        <h4> ❗️ Warning heavy but important stuff ❗️ ️️️</h4>
+        <h4> ❗️ Warning heavy but important stuff ️️️</h4>
       </div>
       <div className="depth4">
         <div className="depthContainer">

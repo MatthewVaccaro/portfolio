@@ -87,7 +87,7 @@ const Home = () => {
         <h2>Pleasure Meeting You!</h2>
         <h3>
           I love meeting new people, so don’t be a stranger and reach out on
-          Twitter or Linked In! You can also{" "}
+          Twitter or Linked In! You can also
           <Link to="/about"> learn more </Link> about me if you're curious.
         </h3>
         <div className="socialButtons">

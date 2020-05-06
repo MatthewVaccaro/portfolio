@@ -16,9 +16,10 @@ export const data = [
     logo: contribution,
     timeline: "product designer  •  Frontend  •  2019 - 2020",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus massa, hendrerit non efficitur eget, viverra nec quam. Curabitur pharetra posuere ante sed tincidunt.Integer lobortis urna eget nisl elementum egestas. Maecenas tincidunt neque",
-    projectLink: "",
-    caseStudy: ""
+      "Contribution is a set of immersive challenge created to help newer UX/Product designers advance their skills.",
+    projectLink: "http://www.usecontribution.com/",
+    caseStudy:
+      "https://medium.com/@Matt.Forerunner/contribution-case-study-3f23a31668d4"
   },
   {
     logo: aroma,

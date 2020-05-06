@@ -17,7 +17,12 @@ const Footer = () => {
         <NavLink to="/about" exact activeStyle={{ color: "#000" }}>
           ABOUT
         </NavLink>
-        <button>RESUME</button>
+        <a
+          target="blank"
+          href="https://www.dropbox.com/s/d32w0ripdrjvf0v/MattVaccaro%20-%202020%20-%20Resume.pdf?dl=0"
+        >
+          <button>RESUME</button>
+        </a>
       </nav>
     </div>
   );

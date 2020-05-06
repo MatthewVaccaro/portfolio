@@ -93,6 +93,14 @@ h2 {
   margin: 0px;
 }
 
+.greetingCard a {
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  color: #3e7fef;
+  font-weight: bold;
+  margin: 0;
+}
+
 @media only screen and (max-width: 500px) {
   .header {
     width: 375px;
