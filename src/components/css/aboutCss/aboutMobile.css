@@ -1,0 +1,14 @@
+@media only screen and (max-width: 500px) {
+	.twoColumnsContainer {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.profilePhoto {
+		margin-top: 0px;
+	}
+
+	.colPhoto {
+		margin-bottom: 10px;
+	}
+}
