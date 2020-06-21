@@ -1,110 +1,128 @@
-import React, { useEffect, useRef } from "react";
-import "./about.css";
-import photo from "../../assets/photo.png";
-import { gsap } from "gsap";
+import React from 'react';
+import '../css/aboutCss/about.css';
+import '../css/aboutCss/aboutTablet.css';
+import '../css/aboutCss/aboutMobile.css';
+
+import profilePhoto from '../../assets/photos/profilePhoto.png';
+import dogsPhoto from '../../assets/photos/dogsPhoto.png';
+import weddingPhoto from '../../assets/photos/weddingPhoto.png';
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+	const loves = [
+		'My Wife',
+		'Dogs',
+		'Metal',
+		'PowerLifting',
+		'The Office',
+		'Hip-Hop',
+		'React Js',
+		'Hiking',
+		'drumming',
+		'What we do in the shadows',
+		'burgers',
+		'Rocket League',
+		'Waterfalls',
+		'JoJo Rabbit',
+		'French Fries',
+		'Mountain Dew',
+		'Motorcycles',
+		'Queer Eye',
+		'Videography',
+		'live Music',
+		'Making ToDo Lists',
+		'Chilling',
+		'Learning'
+	];
 
-  let fadeIn = useRef(null);
-  let fadeIn2 = useRef(null);
-  let fadeIn3 = useRef(null);
-
-  useEffect(() => {
-    gsap.from([fadeIn], {
-      opacity: 0,
-      delay: 0.5,
-      ease: "power3.out",
-      y: 64,
-      stagger: {
-        amount: 0.3
-      }
-    });
-  }, [fadeIn]);
-
-  useEffect(() => {
-    gsap.from([fadeIn2, fadeIn3], {
-      opacity: 0,
-      delay: 1,
-      ease: "power3.out",
-      y: 0,
-      stagger: {
-        amount: 0
-      }
-    });
-  }, [fadeIn2, fadeIn3]);
-  return (
-    <div className="aboutContainer">
-      <div ref={animation => (fadeIn = animation)} className="about">
-        <h1>About Me</h1>
-        <h3>
-          I believe there are depths to every human. Dig as deep as you would
-          like.
-        </h3>
-      </div>
-      <div ref={animation => (fadeIn2 = animation)} className="photo">
-        <div className="profile">
-          <img src={photo} />
-        </div>
-      </div>
-
-      <div ref={animation => (fadeIn3 = animation)} className="depth1">
-        <div className="depthContainer">
-          <h2>Professional</h2>
-          <h3>
-            My name is Matthew Vaccaro and I have been a product designer for
-            the last five years. I have worked for large companies like Capital
-            One & lead my own start-up. I believe my biggest strengths are
-            communication, adaptability, collaboration, and egolessness. I rely
-            heavily on data and testing to make my decisions.
-          </h3>
-        </div>
-      </div>
-      <div className="depth2">
-        <div className="depthContainer">
-          <h2>Hung Out Once</h2>
-          <h3>
-            Most of my time is spent designing, learning to code, and listening
-            to heavy metal music. I'm happily married to my wife, Bethany, with
-            two wonderful dogs. George (Puggle) and Cady (Boston Terrier). I'm
-            also a very competitive gamer, even though I am not very good...
-          </h3>
-        </div>
-      </div>
-      <div className="depth3">
-        <div className="depthContainer">
-          <h2>Colleagues</h2>
-          <h3>
-            I was born in New York but moved to Arizona when I was a wee lad. I
-            lived in Arizona until I met my wife (surprisingly on the internet)
-            and at the age of 19 moved to Southeast Texas to marry her. I now
-            live in Nashville TN, continuing to refine my design & front-end
-            coding skills.
-          </h3>
-        </div>
-      </div>
-      <div className="warning">
-        <h4> ❗️ Warning: heavy but important stuff ️️️</h4>
-      </div>
-      <div className="depth4">
-        <div className="depthContainer">
-          <h2>Good Friends</h2>
-          <h3>
-            My father passed from cancer when I was 15 years old. It was
-            devastating, but looking back now I can see it was a gift in
-            disguise. My father was my best friend and I wanted to make him
-            proud; this desire still bleeds into everything I do. As a boy, it
-            built resilience and compassion. As a young man, it established my
-            work ethic and the determination needed to never back down from a
-            challenge. Finally, as a husband, it has inspired me to serve, lead,
-            and constantly strive to be better.
-          </h3>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="headerMain">
+			<img className=" profilePhoto marginTop150 marginBottom50 width100" src={profilePhoto} />
+			<h1 className="marginBottom50">
+				I'm an energetic and goofy lad living in Nashville, TN with my super cool wife & beloved furballs.
+			</h1>
+			<div className="twoColumnsContainer marginBottom100 width100">
+				<div className="singleColumns  ">
+					<img className=" colPhoto max-width500 marginBottom30 width100 " src={weddingPhoto} />
+					<h3 className=" max-width500 width100 ">In November of 2014 I married my best friend, Bethany.</h3>
+				</div>
+				<div className="divider" />
+				<div className="singleColumns ">
+					<img className="colPhoto max-width500 marginBottom30 width100 " src={dogsPhoto} />
+					<h3 className="max-width500 width100 ">
+						Cady (Boston Terrier) & George (Puggle) in their natural habitat, chilling.
+					</h3>
+				</div>
+			</div>
+			<h2 className="marginBottom30">
+				In the last five years of being a Product designer I have had the fortune to work for amazing teams at
+				Capital One, GoNoodle, and run my own start up!
+			</h2>
+			<h3 className="marginBottom100">
+				In these vastly different environments, I got to encounter a wide array of frictions & processes that
+				have enhanced my view on how to be a strong contributor to any organization. It has been a humbling
+				half-decade that took a once egotistical, lone-wolf, and shaped him into a curious, collaborative, team
+				player trying his best to remove every last drop of ego. I have energizer-bunny-like energy that I put
+				forth on always improving; it's a gift and a curse I continue to try and balance.
+			</h3>
+			<div className="twoColumnsContainer marginBottom100">
+				<div className="singleColumns max-width500">
+					<h2>Strengths</h2>
+					<h3>
+						<span>• Adaptive:</span> I can easily change to the needs of what is in front of me without
+						dropping a beat.
+					</h3>
+					<br />
+					<br />
+					<h3>
+						<span>• Collaborative:</span> Problems are multidimensional and need other perspectives to
+						create a high-quality solution!
+					</h3>
+					<br />
+					<br />
+					<h3>
+						<span>• Communicator:</span> I am considerate of my audience, their communication streams, and
+						often try to be overly verbose.{' '}
+					</h3>
+				</div>
+				<div className="divider" />
+				<div className="singleColumns max-width500 ">
+					<h2>Values</h2>
+					<h3>
+						<span>• Team Empathy:</span> Being mindful of my team and making decisions that will impact them
+						positively.
+					</h3>
+					<br />
+					<br />
+					<h3>
+						<span>• Fearlessness:</span> I will openly ask questions, present ideas, and challenges the
+						status quo without fear of how I might be perceived.
+					</h3>
+					<br />
+					<br />
+					<h3>
+						<span>• Perpetual Improvement:</span> “The more I learn, the more I realize how much I don't
+						know.” ― Albert Einstein
+					</h3>
+					<br />
+					<br />
+					<h3>
+						<span>• Transparency:</span> Even when it comes at my own expense, I'm upfront with my actions
+						and the reasons for them.
+					</h3>
+				</div>
+			</div>
+			<h2> What I Love</h2>
+			<div className="lovesContainer marginBottom100">
+				{loves.map((cv) => {
+					return (
+						<div className="pills marginRight15 marginBottom15">
+							<p className="pillContents">{cv}</p>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
 };
 
 export default About;
