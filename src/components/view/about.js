@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../css/aboutCss/about.css';
 import '../css/aboutCss/aboutTablet.css';
 import '../css/aboutCss/aboutMobile.css';
@@ -35,7 +36,12 @@ const About = () => {
 	];
 
 	return (
-		<div className="headerMain">
+		<motion.div
+			initial={{ opacity: '0%' }}
+			animate={{ opacity: '100%' }}
+			transition={{ delay: 1, when: 'afterChildren', staggerChildren: 0.3 }}
+			className="headerMain"
+		>
 			<img className=" profilePhoto marginTop150 marginBottom50 width100" src={profilePhoto} />
 			<h1 className="marginBottom50">
 				I'm an energetic and goofy lad living in Nashville, TN with my super cool wife & beloved furballs.
@@ -121,7 +127,7 @@ const About = () => {
 					);
 				})}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

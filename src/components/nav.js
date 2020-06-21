@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import '../components/css/nav.css';
@@ -10,9 +11,21 @@ import FlippedHeaderGraphic from '../assets/graphics/FlippedHeaderGraphic.svg';
 const Nav = () => {
 	return (
 		<div className="navContainer">
-			<img className="flippedHeaderGraphic" src={FlippedHeaderGraphic} />
+			<motion.img
+				initial={{ top: -200, opacity: '0%' }}
+				animate={{ top: 0, opacity: '100%' }}
+				transition={{ delay: 0, duration: 1 }}
+				className="flippedHeaderGraphic"
+				src={FlippedHeaderGraphic}
+			/>
 			<NavLink to="/">
-				<img className="pointer" src={logo} />
+				<motion.img
+					initial={{ opacity: '0%' }}
+					animate={{ opacity: '100%' }}
+					transition={{ delay: 0.3, duration: 1 }}
+					className="pointer"
+					src={logo}
+				/>
 			</NavLink>
 			<nav>
 				<NavLink to="/about" className="transitionAll">
