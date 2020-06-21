@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1000px) {
+	.headerMain {
+		padding: 0 40px;
+	}
+
+	.workHeader {
+		display: flex;
+		flex-flow: column;
+	}
+}

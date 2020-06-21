@@ -1,115 +1,95 @@
-import React, { useEffect, useRef } from "react";
-import { data } from "../../data/projectData";
-import { gsap } from "gsap";
-import { Link } from "react-router-dom";
-import "./view.css";
+import React, { useEffect } from 'react';
 
-import Card from "../projectCard/projectCard";
+import '../css/HomeCss/home.css';
+import '../css/HomeCss/homeTablet.css';
+import '../css/HomeCss/homeMobile.css';
+import '../css/tackOn.css';
+import '../css/base.css';
 
-import Twitter from "../../assets/twitter.svg";
-import LinkedIn from "../../assets/linkedIn.svg";
-import blueRight from "../../assets/blueRight.svg";
-import greenLeft from "../../assets/greenLeft.svg";
-import bottomGraphic from "../../assets/bottomGraphic.svg";
+import GoNoodleLogo from '../../assets/logos/GoNoodleLogo.svg';
+import ContributionLogo from '../../assets/logos/ContributionLogo.svg';
+import AromaLogo from '../../assets/logos/AromaLogo.svg';
+import CapitalOneLogo from '../../assets/logos/CapitalOneLogo.svg';
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+	const workData = [
+		{
+			logo: GoNoodleLogo,
+			company: 'GoNoodle',
+			title: 'Product Designer',
+			hover: 'hoverPurple',
+			link: 'https://medium.com/@Matt.Forerunner/working-at-gonoodle-2b3779cd1278'
+		},
+		{
+			logo: AromaLogo,
+			company: 'Aroma',
+			title: 'Co-Founder & Product Designer',
+			hover: 'hoverGreen',
+			link: 'https://medium.com/@Matt.Forerunner/aroma-creating-my-first-tech-start-up-c2a9cbcadca8'
+		},
+		{
+			logo: ContributionLogo,
+			company: 'Contribution',
+			title: 'Product Designer & FrontEnd Dev',
+			hover: 'hoverBlue',
+			link: 'https://medium.com/@Matt.Forerunner/contribution-case-study-3f23a31668d4'
+		},
+		{
+			logo: CapitalOneLogo,
+			company: 'Capital One',
+			title: 'UX Designer',
+			hover: 'hoverRed',
+			link: 'https://medium.com/swlh/capital-one-order-system-case-study-dcc87598d483'
+		}
+	];
 
-  let line = useRef(null);
-  let line2 = useRef(null);
-  let fadeIn = useRef(null);
-  let other = useRef(null);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
-  useEffect(() => {
-    gsap.from([line, line2], {
-      opacity: 0,
-      delay: 1,
-      ease: "power3.out",
-      y: 64,
-      stagger: {
-        amount: 0.15
-      }
-    });
-  }, [line, line2]);
+	return (
+		<div className="headerMain">
+			<div className="headerContentContainer max-width750">
+				<h2> 🤙 Whats Up!</h2>
+				<h1> I’m Matt! A Product Designer, code enthusiast, & dog lover!</h1>
+				<h3 className=" max-width750 marginBottom20">
+					I’m obsessed with connecting the dots between user needs, business goals, and feasibility. I relish
+					in refining processes, evolving products, and growing with a team. I love to simplify complexities
+					and working with awesome humans to make dope products!
+				</h3>
 
-  useEffect(() => {
-    gsap.from([fadeIn], {
-      opacity: 0,
-      delay: 0.5,
-      ease: "power3.out",
-      y: 0,
-      stagger: {
-        amount: 0.15
-      }
-    });
-  }, [fadeIn]);
-  return (
-    <>
-      <div ref={animation => (fadeIn = animation)} className="masterContainer">
-        <div ref={animation => (line = animation)} className="header">
-          <h1>Hey, I'm Matt!</h1>
-          <h3>
-            I am a product designer, a curious thinker, and most of all, a
-            friend! <br /> I spend my time hanging with my wife, doggos, and
-            trying to make myself better everyday!
-          </h3>
-          <div className="socialButtons">
-            <a
-              className="iconLink"
-              target="_blank"
-              href="https://twitter.com/EarHolesMcgee"
-            >
-              <img className="icons" src={Twitter} />
-            </a>
-            <a
-              className="iconLink"
-              target="_blank"
-              href="https://www.linkedin.com/in/matthew-vaccaro-409158119/"
-            >
-              <img className="icons" src={LinkedIn} />
-            </a>
-          </div>
-        </div>
-        <img className="blueRight" src={blueRight} />
-        <img className="greenLeft" src={greenLeft} />
-      </div>
-      <h2 ref={animation => (line2 = animation)}>WORK</h2>
-      {data
-        ? data.map(cv => {
-            return <Card data={cv} />;
-          })
-        : "no data"}
-      <p className="note"> Additional work available upon request</p>
-      <img className="bottomGraphic" src={bottomGraphic} />
-      <div className="greetingCard">
-        <h2>Pleasure Meeting You!</h2>
-        <h3>
-          I love meeting new people, so reach out on Twitter or Linked in. Don't
-          be a stranger! <br />
-          You can also
-          <Link to="/about"> learn more </Link> about me if you're curious.
-        </h3>
-        <div className="socialButtons">
-          <a
-            className="iconLink"
-            target="_blank"
-            href="https://twitter.com/EarHolesMcgee"
-          >
-            <img className="icons" src={Twitter} />
-          </a>
-          <a
-            className="iconLink"
-            target="_blank"
-            href="https://www.linkedin.com/in/matthew-vaccaro-409158119/"
-          >
-            <img className="icons" src={LinkedIn} />
-          </a>
-        </div>
-      </div>
-    </>
-  );
+				<div>
+					<p className="badge">• Available for full-time opportunities </p>
+				</div>
+			</div>
+			<section className="workSection ">
+				<div className="workHeader marginBottom50">
+					<h2 className="marginRight10 marginBottom0"> My Work </h2>
+					<h3> All projects link out to Medium articals</h3>
+				</div>
+				<div className="workLayout">
+					{workData.map((cv) => {
+						return <ProjectCards data={cv} key={Math.random()} />;
+					})}
+				</div>
+			</section>
+		</div>
+	);
 };
 
 export default Home;
+
+const ProjectCards = ({ data }) => {
+	return (
+		<div className="singleWorkContainer">
+			<a href={data.link} target="#" className="pointer ">
+				<div className={`imageContainer ${data.hover} transitionAll  `}>
+					<img className="logos transitionAll width60" src={data.logo} />
+				</div>
+
+				<h3 className={`roboto weight700 lineHeightReset marginTop15`}> {data.company}</h3>
+				<p className={`roboto marginBottom20`}> {data.title} </p>
+			</a>
+		</div>
+	);
+};

@@ -1,0 +1,30 @@
+.twoColumnsContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.loveConatiner {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	background: orange;
+}
+
+.pills {
+	background: var(--main-black);
+	padding: 5px 10px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.pillContents {
+	color: var(--main-white);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.divider {
+	width: 40px;
+	min-width: 40px;
+	min-height: 40px;
+}
