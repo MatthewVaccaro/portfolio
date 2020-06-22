@@ -89,7 +89,7 @@ const Home = () => {
 			<section className="workSection ">
 				<div className="workHeader marginBottom50">
 					<h2 className="marginRight10 marginBottom0"> My Work </h2>
-					<h3> All projects link out to Medium articals</h3>
+					<h3> All projects link out to Medium articles</h3>
 				</div>
 				<div className="workLayout">
 					{workData.map((cv) => {

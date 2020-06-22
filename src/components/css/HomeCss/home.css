@@ -60,6 +60,6 @@
 }
 .imageContainer:hover .logos,
 .imageContainer:hover ~ .logos {
-	opacity: 100%;
+	opacity: 100;
 	transform: scale(1.2);
 }
