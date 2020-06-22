@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 import '../css/HomeCss/home.css';
 import '../css/HomeCss/homeTablet.css';
@@ -48,7 +49,12 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="headerMain">
+		<motion.div
+			initial={{ opacity: '0%' }}
+			animate={{ opacity: '100%' }}
+			transition={{ delay: 1 }}
+			className="headerMain"
+		>
 			<div className="headerContentContainer max-width750">
 				<h2> 🤙 Whats Up!</h2>
 				<h1> I’m Matt! A Product Designer, code enthusiast, & dog lover!</h1>
@@ -73,7 +79,7 @@ const Home = () => {
 					})}
 				</div>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 
