@@ -55,7 +55,7 @@
 	width: 40%;
 	height: 40%;
 	grid-area: 1 / 1 / 2 / 2;
-	opacity: 100%;
+	opacity: 100;
 	transform: scale(1.0);
 }
 .imageContainer:hover .logos,
