@@ -6,6 +6,10 @@
 	margin-top: 100px;
 }
 
+.headline {
+	display: flex;
+}
+
 .badge {
 	color: var(--main-green);
 	text-transform: uppercase;
