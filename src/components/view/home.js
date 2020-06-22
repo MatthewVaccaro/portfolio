@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 import '../css/HomeCss/home.css';
 import '../css/HomeCss/homeTablet.css';
@@ -48,9 +49,32 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="headerMain">
+		<motion.div
+			initial={{ opacity: '0%' }}
+			animate={{ opacity: '100%' }}
+			transition={{ delay: 1 }}
+			className="headerMain"
+		>
 			<div className="headerContentContainer max-width750">
-				<h2> 🤙 Whats Up!</h2>
+				<div className="headline">
+					<motion.h2
+						animate={{
+							rotate: [ 0, 50, 0, 50, -25, 0 ]
+						}}
+						transition={{
+							delay: 2,
+							duration: 0.5,
+							ease: 'easeInOut',
+							loop: Infinity,
+							repeatDelay: 3
+						}}
+						className="marginRight10"
+					>
+						🤙
+					</motion.h2>
+					<h2>What's Up!</h2>
+				</div>
+
 				<h1> I’m Matt! A Product Designer, code enthusiast, & dog lover!</h1>
 				<h3 className=" max-width750 marginBottom20">
 					I’m obsessed with connecting the dots between user needs, business goals, and feasibility. I relish
@@ -73,7 +97,7 @@ const Home = () => {
 					})}
 				</div>
 			</section>
-		</div>
+		</motion.div>
 	);
 };
 
