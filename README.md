@@ -1,1 +1,3 @@
-Wrote everything in two hours to get ahead of layoffs due to covid. The code isn't super clean...<3
+Made from scratch by Matthew Vaccaro
+
+Trying out a new CSS structure. Each view file (home & about) will have a stylesheet. On top, they will each have a mobile & tablet stylesheet for responsive styles. I also now have a "base" stylesheet for DOM elements with base styles that won't frequently change. (h1 - h5, a, p, button, spans...) Lastly, I have a tackOn style sheet. This takes a play out of the tailwind book with a twist. Take on serves as a way to avoid inheritance issues without creating an enormous list of styles. As new needs arise the tackOn list will grow. I am excited to see how well this architecture scales.
