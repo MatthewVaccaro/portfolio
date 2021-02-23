@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+  }
+
+  .H1 {
+    @apply text-6xl font-bold text-black font-sans;
+  }
+
+  .H2 {
+    @apply text-4xl font-bold text-black font-sans;
+  }
+  .H3_slab {
+    @apply text-2xl font-medium text-black font-serif;
+  }
+  .H3 {
+    @apply text-2xl font-bold text-black font-sans;
+  }
+  .H4 {
+    @apply text-base font-bold text-black font-sans;
+  }
+  .H4_light {
+    @apply text-base font-bold text-white font-sans;
+  }
+}

@@ -1,0 +1,52 @@
+import cLogo_light from "../assets/devAssets/lang/light/cLogo_light.svg"
+import djangoLogo_light from "../assets/devAssets/lang/light/djangoLogo_light.svg"
+import expressLogo_light from "../assets/devAssets/lang/light/expressLogo_light.svg"
+import jsLogo_light from "../assets/devAssets/lang/light/jsLogo_light.svg"
+import nodeLogo_light from "../assets/devAssets/lang/light/nodeLogo_light.svg"
+import reactLogo_light from "../assets/devAssets/lang/light/reactLogo_light.svg"
+import netLogo_light from "../assets/devAssets/lang/light/netLogo_light.svg"
+import pythonLogo_light from "../assets/devAssets/lang/light/pythonLogo_light.svg"
+import tsLogo_light from "../assets/devAssets/lang/light/tsLogo_light.svg"
+import reduxLogo_light from "../assets/devAssets/lang/light/reduxLogo_light.svg"
+import knexLogo_light from "../assets/devAssets/lang/light/knexLogo_light.svg"
+
+import framerLogo_dark from "../assets/devAssets/lang/dark/framerLogo_dark.svg"
+import gAnalytics_dark from "../assets/devAssets/lang/dark/gAnalyticsLogo_dark.svg"
+import hooksLogo_dark from "../assets/devAssets/lang/dark/hooksLogo_dark.svg"
+import jestLogo_dark from "../assets/devAssets/lang/dark/jestLogo_dark.svg"
+import nodeLogo_dark from "../assets/devAssets/lang/dark/nodeLogo_dark.svg"
+import pgLogo_dark from "../assets/devAssets/lang/dark/pgLogo_dark.svg"
+import puppeteerLogo_dark from "../assets/devAssets/lang/dark/puppeteerLogo_dark.svg"
+import reactLogo_dark from "../assets/devAssets/lang/dark/reactLogo_dark.svg"
+import reduxLogo_dark from "../assets/devAssets/lang/dark/reduxLogo_dark.svg"
+import stripeLogo_dark from "../assets/devAssets/lang/dark/stripeLogo_dark.svg"
+import tailwindLogo_dark from "../assets/devAssets/lang/dark/tailwindLogo_dark.svg"
+
+export const lightIcon = {
+    c : cLogo_light,
+    django : djangoLogo_light,
+    express : expressLogo_light,
+    js : jsLogo_light,
+    react : reactLogo_light,
+    net : netLogo_light,
+    python : pythonLogo_light,
+    node : nodeLogo_light,
+    ts : tsLogo_light,
+    redux: reduxLogo_light,
+    knex: knexLogo_light
+
+}
+
+export const darkIcon = {
+    framer : framerLogo_dark,
+    hooks : hooksLogo_dark,
+    ganalytics : gAnalytics_dark,
+    jest : jestLogo_dark,
+    pg : pgLogo_dark,
+    puppeteer : puppeteerLogo_dark,
+    react : reactLogo_dark,
+    redux : reduxLogo_dark,
+    stripe : stripeLogo_dark,
+    node : nodeLogo_dark,
+    tailwind : tailwindLogo_dark
+}
