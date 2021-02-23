@@ -13,10 +13,10 @@ const Footer = () => {
 	return (
 		<div>
 			<img className="w-full" src={FooterGraphic}/>
-		<div className="bg-black w-full py-10" >
+		<div className="bg-black w-full py-10 px-3" >
 			<div className="mx-auto " style={{maxWidth: "1040px"}}>
 			<div style={{maxWidth: '800px'}}>
-			<h2 className="text-white mb-12 " >Let’s work together!</h2>
+			<h2 className="text-white mb-4 sm:mb-12 " >Let’s work together!</h2>
 			<h3 className="text-white opacity-80 mb-8"> I have learned it doesn't matter what cool tech you get to work on or the fancy perks. I love to code but culture & humans trump everything! In my next role, I am looking for amazing humans to kickass with! Sounds like your team? Hit me up!</h3>
 
 			<p className="uppercase text-white mb-12 cursor-pointer hover:text-red transition-all duration-300" > Matthew.tylor.vaccaro@gmail.com </p>

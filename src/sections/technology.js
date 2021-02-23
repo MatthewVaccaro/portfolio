@@ -5,6 +5,7 @@ import Tag from "../utility/tag"
 function Technology() {
     return (
         <div>
+            <h1 className="mb-6 mt-12 sm:mb-12" > Technology</h1>
             <div className="flex bg-black_100 py-2 justify-center rounded">
                 <div className="flex mr-6 " >
                     <div className="w-4 h-4 mr-2 bg-purple rounded"/>

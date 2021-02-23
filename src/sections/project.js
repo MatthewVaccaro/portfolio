@@ -15,7 +15,7 @@ function Project({image,title,info,content,icons,link}) {
                 <p> {info} </p>
                 </div>
                 <a target="blank" href={link} >
-                <Button text="View Github" image={githubLogo} color="black"  />
+                <Button text="View Repo" image={githubLogo} color="black"  />
                 </a>
 
             </div>

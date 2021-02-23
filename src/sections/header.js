@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className=" mt-40" >
+        <div className="mt-20  sm:mt-40" >
             <div className="flex mb-8" >
             <span className="mr-3 H2 " > 🤙 </span> <h2>What’s up!</h2>
             </div>
