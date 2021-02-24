@@ -1,11 +1,10 @@
-import cLogo_light from "../assets/devAssets/lang/light/cLogo_light.svg"
+import goLogo_Light from "../assets/devAssets/lang/light/goLogo_Light.svg"
 import djangoLogo_light from "../assets/devAssets/lang/light/djangoLogo_light.svg"
 import expressLogo_light from "../assets/devAssets/lang/light/expressLogo_light.svg"
 import jsLogo_light from "../assets/devAssets/lang/light/jsLogo_light.svg"
 import nodeLogo_light from "../assets/devAssets/lang/light/nodeLogo_light.svg"
 import reactLogo_light from "../assets/devAssets/lang/light/reactLogo_light.svg"
-import netLogo_light from "../assets/devAssets/lang/light/netLogo_light.svg"
-import pythonLogo_light from "../assets/devAssets/lang/light/pythonLogo_light.svg"
+import ginLogo_light from "../assets/devAssets/lang/light/ginLogo_light.svg"
 import tsLogo_light from "../assets/devAssets/lang/light/tsLogo_light.svg"
 import reduxLogo_light from "../assets/devAssets/lang/light/reduxLogo_light.svg"
 import knexLogo_light from "../assets/devAssets/lang/light/knexLogo_light.svg"
@@ -21,15 +20,15 @@ import reactLogo_dark from "../assets/devAssets/lang/dark/reactLogo_dark.svg"
 import reduxLogo_dark from "../assets/devAssets/lang/dark/reduxLogo_dark.svg"
 import stripeLogo_dark from "../assets/devAssets/lang/dark/stripeLogo_dark.svg"
 import tailwindLogo_dark from "../assets/devAssets/lang/dark/tailwindLogo_dark.svg"
+import pythonLogo_dark from "../assets/devAssets/lang/dark/pythonLogo_dark.svg"
 
 export const lightIcon = {
-    c : cLogo_light,
+    go : goLogo_Light,
     django : djangoLogo_light,
     express : expressLogo_light,
     js : jsLogo_light,
     react : reactLogo_light,
-    net : netLogo_light,
-    python : pythonLogo_light,
+    gin : ginLogo_light,
     node : nodeLogo_light,
     ts : tsLogo_light,
     redux: reduxLogo_light,
@@ -48,5 +47,6 @@ export const darkIcon = {
     redux : reduxLogo_dark,
     stripe : stripeLogo_dark,
     node : nodeLogo_dark,
-    tailwind : tailwindLogo_dark
+    tailwind : tailwindLogo_dark,
+    python : pythonLogo_dark
 }

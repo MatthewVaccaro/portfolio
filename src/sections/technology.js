@@ -25,26 +25,27 @@ function Technology() {
                     <div className="flex flex-wrap">
                         <Tag background="purple" icon={lightIcon.js} title="Javascript" color="white"/>
 
-                        <Tag background="purple" icon={lightIcon.python} title="Python" color="white"/>
-
                         <Tag background="purple" icon={lightIcon.node} title="Node" color="white"/>
 
-                        <Tag background="red" icon={lightIcon.ts} title="TypeScript" color="white"/>
+                        <Tag background="red" icon={lightIcon.go} title="Golang" color="white"/>
+                        
+                        <Tag background="orange" icon={darkIcon.python} title="Python" color="black"/>
 
-                        <Tag background="red" icon={lightIcon.c} title="C Sharp" color="white"/>
+                        <Tag background="red" icon={lightIcon.ts} title="TypeScript" color="white"/>
                     </div>
                 </div>
 
                 <div className="flex my-10 flex-wrap" >
-                    <h2 className=" mr-9  mb-4 sm:mb-0sm:text-right" style={{width: "210px"}}>Frameworks:</h2>
+                    <h2 className=" mr-9  mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}}>Frameworks:</h2>
                     <div className="flex  flex-wrap">
                         <Tag background="purple" icon={lightIcon.react} title="React" color="white"/>
 
                         <Tag background="purple" icon={lightIcon.express} title="Express" color="white"/>
+                        
+                        <Tag background="red" icon={lightIcon.gin} title="Gin Gonic" color="white"/>
 
                         <Tag background="red" icon={lightIcon.django} title="Django" color="white"/>
 
-                        <Tag background="red" icon={lightIcon.net} title=".Net Core" color="white"/>
                     </div>
                 </div>
 
