@@ -6,69 +6,51 @@ function Technology() {
     return (
         <div>
             <h1 className="mb-6 mt-12 sm:mb-12" > Technology</h1>
-            <div className="flex bg-black_100 py-2 justify-center rounded">
-                <div className="flex mr-6 " >
-                    <div className="w-4 h-4 mr-2 bg-purple rounded"/>
-                    <p> Expert </p>
-                </div>
-                <div className="flex mr-6" >
-                    <div className="w-4 h-4 mr-2 bg-orange rounded"/>
-                    <p> Proficient </p>
-                </div>
-                <div className="flex" >
-                    <div className="w-4 h-4 mr-2 bg-red rounded"/>
-                    <p> Learning </p>
-                </div>
-            </div>
+            
                 <div className="flex flex-wrap my-10" >
                     <h2 className=" mr-9 mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}} >Languages:</h2>
                     <div className="flex flex-wrap">
-                        <Tag background="purple" icon={lightIcon.js} title="Javascript" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.js} title="Javascript" color="black"/>
 
-                        <Tag background="purple" icon={lightIcon.node} title="Node" color="white"/>
-
-                        <Tag background="red" icon={lightIcon.go} title="Golang" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.node} title="Node" color="black"/>
                         
-                        <Tag background="orange" icon={darkIcon.python} title="Python" color="black"/>
-
-                        <Tag background="red" icon={lightIcon.ts} title="TypeScript" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.python} title="Python" color="black"/>
                     </div>
                 </div>
 
                 <div className="flex my-10 flex-wrap" >
                     <h2 className=" mr-9  mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}}>Frameworks:</h2>
                     <div className="flex  flex-wrap">
-                        <Tag background="purple" icon={lightIcon.react} title="React" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.react} title="React" color="black"/>
 
-                        <Tag background="purple" icon={lightIcon.express} title="Express" color="white"/>
-                        
-                        <Tag background="red" icon={lightIcon.gin} title="Gin Gonic" color="white"/>
-
-                        <Tag background="red" icon={lightIcon.django} title="Django" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.express} title="Express" color="black"/>
+                       
 
                     </div>
                 </div>
 
-                <div className="flex my-10 flex-wrap" >
-                    <h2 className=" mr-9 mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}}>Libraries:</h2>
-                    <div className="flex flex-wrap">
-                        <Tag background="purple" icon={lightIcon.redux} title="Redux" color="white"/>
-
-                        <Tag background="orange" icon={darkIcon.puppeteer} title="Puppeteer" color="black"/>
-
-                        <Tag background="orange" icon={darkIcon.framer} title="Framer Motion" color="black"/>
-
-                        <Tag background="red" icon={lightIcon.react} title="React Query" color="white"/>
-                    </div>
-                </div>
+               
 
                 <div className="flex my-10 flex-wrap" >
                     <h2 className=" mr-9 mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}}>Database:</h2>
                     <div className="flex flex-wrap">
-                        <Tag background="purple" icon={lightIcon.knex} title="Knex" color="white"/>
+                        <Tag background="black_100" icon={darkIcon.knex} title="Knex" color="black"/>
 
-                        <Tag background="orange" icon={darkIcon.pg} title="Posgres SQl" color="black"/>
+                        <Tag background="black_100" icon={darkIcon.pg} title="Posgres SQl" color="black"/>
 
+                    </div>
+                </div>
+
+                <div className="flex my-10 flex-wrap" >
+                    <h2 className=" mr-9 mb-4 sm:mb-0 sm:text-right" style={{width: "210px"}}>Learning:</h2>
+                    <div className="flex flex-wrap">
+                    <Tag background="black_100" icon={darkIcon.go} title="Golang" color="black"/>
+
+                    <Tag background="black_100" icon={darkIcon.gin} title="Gin Gonic" color="black"/>
+
+                        <Tag background="black_100" icon={darkIcon.puppeteer} title="Puppeteer" color="black"/>
+
+                        <Tag background="black_100" icon={darkIcon.framer} title="Framer" color="black"/>
                     </div>
                 </div>
             

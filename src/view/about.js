@@ -37,9 +37,9 @@ const About = () => {
 
 	return (
 		<motion.div
-			initial={{ opacity: '0%' }}
-			animate={{ opacity: '100%' }}
-			transition={{ delay: 1 }}
+			initial={{ opacity: '0%', paddingTop: "100px" }}
+			animate={{ opacity: '100%', paddingTop: "0px" }}
+			transition={{ duration: 1, delay: 1 }}
 			className=" px-3 w-full mx-auto mt-6 sm:mt-28"
 			style={{maxWidth: '1040px'}}
 		>
