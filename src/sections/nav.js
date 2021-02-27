@@ -37,7 +37,7 @@ const Nav = () => {
 				</NavLink>
 
 				<a
-					href="https://www.dropbox.com/s/d32w0ripdrjvf0v/MattVaccaro%20-%202020%20-%20Resume.pdf?dl=0"
+					href="https://www.dropbox.com/s/2nqp3hpbkmicbqt/MattVaccaro%20-%202020%20-%20Resume.pdf?dl=0"
 					target="#"
 					className="transition-all ml-7 z-10"
 				>
